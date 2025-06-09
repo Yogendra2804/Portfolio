@@ -12,12 +12,13 @@ mood_switch.addEventListener("click", function () {
         currMood = "light"
         document.getElementById("mood").src = "imagees/moon_icon.webp";
         document.querySelector("body").style.backgroundColor = "#D4F6FF";
-        document.querySelectorAll("#dumb-text, #Contact-heading, #Contact, #Intro , #rightDiv-heading")
+        document.querySelectorAll("#dumb-text, #Contact-heading, #Contact, #Intro , #rightDiv-heading , #About-text")
             .forEach(element => {
                 element.style.color = "black";
             });
 
         document.getElementById("my-project-heading").style.setProperty("color", "black", "important");
+        document.getElementById("about-me-heading").style.setProperty("color", "black", "important");
          document.getElementById("Contact").style.borderColor = "black";
         document.querySelector(".Home").style.backgroundColor = "#C6E7FF"
         document.querySelectorAll("#rightDiv, #DowmlordBtn").forEach(el => {
