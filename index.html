@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yogendra's Portfolio</title>
+    <!-- Page Tab Logoo -->
+    <link rel="icon" type="image/png" href="imagees/favicon-32x32.png">
+
+    <!-- Bootstrap & Fonts -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style-sheet.css" />
+
+    <!-- AOS - CDN -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+
+</head>
+
+
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="imagees/logo.png" alt="Logo">
+                <h3><a href="#" style="text-decoration: none; color: white;">Yogendra Gupta</a></h3>
+            </div>
+
+            <nav id="nav-menu">
+                <a class="navbar" href="#Home">Home</a>
+                <a class="navbar" href="#Projects">Projects</a>
+                <a class="navbar" href="#About">About</a>
+                <a class="navbar" href="#Contact">Contact</a>
+            </nav>
+
+            <div id="dividv">
+                <div class="hamburger" id="hamburger">
+                    ☰
+                </div>
+                <div id="mode-switch">
+                    <img id="mood" src="imagees/sun_icon.webp" alt="Mode-switch">
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+
+    <div class="Home">
+        <div id="leftDiv">
+            <p id="Intro">
+                3rd Year B.Tech CSE Student at VIT Vellore <br>
+                Skilled in Python, Java, JavaScript, C, C++, HTML, CSS <br>
+                Currently focused on mastering DSA and exploring the basics of AI/ML <br>
+                Familiar with Git, basic GUI development, and experimenting with Chrome Extensions
+
+            </p>
+        </div>
+        <div id="rightDiv" data-aos="fade-left">
+            <div id="DowmlordBtn">
+                <a href="Assets/Yogendra_Gupta_Resume.pdf" download>
+                    <button id="Btn">Resume</button>
+                </a>
+                <a href="Assets/Yogendra_Gupta_Resume.pdf" download>
+                    <img id="resumeDownloadBtn"
+                        src="https://tse1.mm.bing.net/th/id/OIP.qrkmCfHP57fZcjO92C48IgHaEf?rs=1&pid=ImgDetMain"
+                        alt="Download Resume" style="cursor: pointer;">
+                </a>
+            </div>
+            <h4 id="rightDiv-heading">Tools I work with →</h4>
+            <div id="images-container">
+                <a href="https://git-scm.com/" target="_blank"><img
+                        src="https://tse2.mm.bing.net/th/id/OIP.q0DQLwqov4XeEv1FvaWwwAHaHa" alt="Git"></a>
+                <a href="https://code.visualstudio.com/" target="_blank"><img
+                        src="https://tse1.mm.bing.net/th/id/OIP.vSAtQNYAzEcFnjB9YEP54AHaHa" alt="VS Code"></a>
+                <a href="https://www.w3schools.com/" target="_blank"><img
+                        src="https://logospng.org/download/w3schools/w3schools-4096.png" alt="W3Schools"></a>
+                <a href="https://replit.com/" target="_blank"><img
+                        src="https://wikiwandv2-19431.kxcdn.com/_next/image?url=https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/New_Replit_Logo.svg/langzh-tw-640px-New_Replit_Logo.svg.png&w=640&q=50"
+                        alt="Raplit"></a>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="About" id="About">
+        <h2 class="text-center my-4 text-light" id="about-me-heading" data-aos="fade-up-left">Little About Me</h2>
+        <div id="content">
+            <div id="imgContainer">
+                <img src="imagees/Me.jpg" alt="Me">
+            </div>
+            <div id="Txt-container">
+                <p id="About-text" data-aos="fade-up-left">
+                    Hi, I’m Yogendra — a developer who learns by building.
+
+                    I’m currently pursuing Computer Science at VIT Vellore, where I’ve been diving deep into development
+                    and problem-solving. From writing CLI tools to building browser extensions and UIs, I like
+                    experimenting, improving, and figuring things out on my own.
+
+                    I’m strengthening my DSA fundamentals and slowly moving toward AI/ML to understand the bigger
+                    picture in tech. I believe growth comes through consistency, curiosity, and just showing up — one
+                    project, one bug, and one solution at a time.
+
+                    If you're building something meaningful, I’d love to be a part of it.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="Projects" id="Projects">
+        <section id="projects">
+            <h2 class="text-center my-4 text-light" id="my-project-heading" data-aos="fade-up-right">My Projects</h2>
+            <div class="flip-card-container" data-aos="zoom-in">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="imagees/inventory_banner.jpeg" alt="Inventory Project">
+                            <h3>Inventory Management</h3>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Inventory System</h3>
+                            <p>CLI + GUI app to manage and export inventory data. Built with Python, Tkinter, CSV.</p>
+                            <a href="https://github.com/Yogendra2804/Inventory-Management-System"
+                                target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="imagees/Chrome_Extension.png" alt="Chrome Extension">
+                            <h3>Chrome Extension</h3>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Focus Extension</h3>
+                            <p>Highlight text and save to Google Sheet. Built using JS + Chrome APIs + Apps Script.</p>
+                            <a href="https://github.com/Yogendra2804/Chrome-Highlight-Extension-"
+                                target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="Contact" id="Contact">
+        <section>
+            <h1 id="Contact-heading" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">Contact Me :)</h1>
+            <div class="dummy-text">
+                <p id="dumb-text" data-aos="fade-up-left">
+                    📬 Thanks for visiting! Feel free <br> to reach out if you have any questions,<br> want to
+                    collaborate, or just want to say hi!<br>
+                </p>
+            </div>
+            <div id="form" data-aos="zoom-out-right">
+                <form id="contact-form" aaction="https://formsubmit.co/yogendra.gupta2023@vitstudent.ac.in"
+                    method="POST">
+                    <input type="hidden" name="_captcha" value="false">
+
+                    <div id="name">
+                        <input type="text" name="name" id="full-name" placeholder="Your Name">
+                        <input type="email" name="email" id="email" placeholder="Your Email">
+                    </div>
+
+                    <div id="comment">
+                        <textarea name="message" id="message" placeholder="Write your message here..."></textarea>
+                    </div>
+
+                    <button id="submity" type="submit">Send →</button>
+
+                    <p id="form-message"
+                        style="visibility: hidden; color: limegreen; font-weight: bold; margin-top: 10px;">
+                        ✅ Message sent successfully!
+                    </p>
+                </form>
+
+            </div>
+            <hr>
+        </section>
+    </div>
+
+    <footer>
+        <div class="row">
+            <div class="social-links">
+                <a href="https://github.com/Yogendra2804"><i class="fab fa-github"></i></a>
+                <a href="www.linkedin.com/in/yogendra-gupta-123b0028a"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/yogendragupta845/"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div id="copyright">
+            &copy; All Rights Reserved.
+        </div>
+        <div id="owner">
+            <span>Designed by <a href="#">Yogendra Gupta</a></span>
+        </div>
+    </footer>
+    <script>
+        AOS.init();
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
