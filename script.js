@@ -24,6 +24,7 @@ mood_switch.addEventListener("click", function () {
         document.querySelectorAll("#rightDiv, #DowmlordBtn").forEach(el => {
             el.style.backgroundColor = "floralwhite";
         });
+        document.getElementById("content").style.borderColor = "black";
 
     }
     else if (currMood === "light") {
@@ -40,6 +41,8 @@ mood_switch.addEventListener("click", function () {
         document.querySelectorAll("#rightDiv, #DowmlordBtn").forEach(el => {
             el.style.backgroundColor = "white";
         });
+        document.getElementById("content").style.borderColor = "white";
+
     }
 })
 
