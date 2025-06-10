@@ -1,9 +1,9 @@
 const hamburger = document.getElementById('hamburger');
-  const navMenu = document.getElementById('nav-menu');
+const navMenu = document.getElementById('nav-menu');
 
-  hamburger.addEventListener('click', () => {
+hamburger.addEventListener('click', () => {
     navMenu.style.display = navMenu.style.display === 'flex' ? 'none' : 'flex';
-  });
+});
 let mood_switch = document.getElementById("mode-switch")
 let currMood = "dark"
 
@@ -19,31 +19,31 @@ mood_switch.addEventListener("click", function () {
 
         document.getElementById("my-project-heading").style.setProperty("color", "black", "important");
         document.getElementById("about-me-heading").style.setProperty("color", "black", "important");
-         document.getElementById("Contact").style.borderColor = "black";
+        document.getElementById("Contact").style.borderColor = "black";
         document.querySelector(".Home").style.backgroundColor = "#C6E7FF"
         document.querySelectorAll("#rightDiv, #DowmlordBtn").forEach(el => {
-  el.style.backgroundColor = "floralwhite";
-});
-     
+            el.style.backgroundColor = "floralwhite";
+        });
+
     }
-    else if (currMood === "light"){
+    else if (currMood === "light") {
         currMood = "dark"
         document.getElementById("mood").src = "imagees/sun_icon.webp";
         document.querySelector("body").style.backgroundColor = "#0f172a";
-        document.querySelectorAll("#dumb-text, #Contact-heading, #Contact, #Intro , #rightDiv-heading , #my-project-heading")
+        document.querySelectorAll("#dumb-text, #Contact-heading, #Contact, #Intro , #rightDiv-heading , #my-project-heading , #About-text")
             .forEach(element => {
                 element.style.color = "white";
             });
-
-         document.getElementById("Contact").style.borderColor = "white";
+        document.getElementById("about-me-heading").style.setProperty("color", "white", "important");
+        document.getElementById("Contact").style.borderColor = "white";
         document.querySelector(".Home").style.backgroundColor = "#1e293b"
         document.querySelectorAll("#rightDiv, #DowmlordBtn").forEach(el => {
-  el.style.backgroundColor = "white";
-});
+            el.style.backgroundColor = "white";
+        });
     }
 })
 
-document.getElementById("contact-form").addEventListener("submit" , function(e) {
+document.getElementById("contact-form").addEventListener("submit", function (e) {
     const name = document.getElementById("full-name");
     const email = document.getElementById("email");
     const message = document.getElementById("message");
@@ -61,11 +61,11 @@ document.getElementById("contact-form").addEventListener("submit" , function(e) 
         if (!message.value.trim()) {
             message.style.borderColor = "red";
         }
-        
+
     }
-    else{
+    else {
         let form_message = document.getElementById("form-message");
-        form_message.style.visibility = "visible" ;
+        form_message.style.visibility = "visible";
         form_message.style.display = "block"
     }
 })
