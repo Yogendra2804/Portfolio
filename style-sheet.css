@@ -16,7 +16,7 @@ body {
 }
 
 
-html{
+html {
   width: 100%;
   max-width: 100vw;
   overflow-x: hidden;
@@ -51,11 +51,11 @@ header {
   cursor: pointer;
 }
 
-.logo h3 a{
-    text-decoration: none; 
-    color: white;
-    font-style: italic;
-    font-size: 1.2rem;
+.logo h3 a {
+  text-decoration: none;
+  color: white;
+  font-style: italic;
+  font-size: 1.2rem;
 }
 
 .logo img:hover,
@@ -103,7 +103,8 @@ nav {
 
 }
 
-#leftDiv, #rightDiv {
+#leftDiv,
+#rightDiv {
   flex: 1 1 300px;
   padding: 1em;
 }
@@ -176,14 +177,17 @@ nav {
   transform: scale(1.2);
 }
 
-#rightDiv h4{
-    color: black; margin-top: 1em;
+#rightDiv h4 {
+  color: black;
+  margin-top: 1em;
 }
+
 @keyframes fadeSlideIn {
   from {
     opacity: 0;
     transform: translateY(40px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -195,40 +199,47 @@ nav {
     opacity: 0;
     transform: translateX(40px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
   }
 }
 
-#content{
-    display: flex;
+#content {
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  /* padding: 2em 1em; */
-  margin-left: 3em;
+  padding-left: 3em;
   margin-right: 3em;
-    flex: 1 1 300px;
+  flex: 1 1 300px;
+  border-bottom: 2px solid white;
+  padding-bottom: 3em;
+  width: 100%;
 }
 
-#imgcontainer , #Txt-container{
-    flex: 1 1 300px;
+#imgcontainer,
+#Txt-container {
+  flex: 1 1 300px;
   padding: 0em;
 }
 
-#imgContainer img{
-    width: 100%;
+#imgContainer img {
+  width: 100%;
   height: 300px;
   object-fit: cover;
   border-radius: 8px;
   margin-bottom: 15px;
+  border: 2px solid white;
+
 }
 
-#Txt-container{
-    margin-left: 10em;
-    width: 60em;
-    font-size: 20px;
+#Txt-container {
+  width: 60em;
+  font-size: 20px;
+  margin-right: 3em;
+
 }
 
 
@@ -266,7 +277,7 @@ nav {
   backface-visibility: hidden;
   border-radius: 12px;
   background: white;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
   padding: 20px;
   text-align: center;
 }
@@ -288,31 +299,31 @@ nav {
 }
 
 .flip-card-back h3 {
-    font-size: 1.3rem;
-    color: #007bff;
-    margin-bottom: 10px;
+  font-size: 1.3rem;
+  color: #007bff;
+  margin-bottom: 10px;
 }
 
 .flip-card-back p {
-    font-size: 0.95rem;
-    color: #555;
-    margin-bottom: 15px;
-    padding: 0 10px;
-    font-weight: bold;
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 15px;
+  padding: 0 10px;
+  font-weight: bold;
 }
 
 .flip-card-back a {
-    padding: 8px 14px;
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
-    border-radius: 6px;
-    transition: background-color 0.3s;
+  padding: 8px 14px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s;
 }
 
 .flip-card-back a:hover {
-    background-color: #0056b3;
-    box-shadow: 10px 10px 30px rgb(198, 184, 184);
+  background-color: #0056b3;
+  box-shadow: 10px 10px 30px rgb(198, 184, 184);
 }
 
 .Contact {
@@ -329,7 +340,8 @@ nav {
   margin-top: 2em;
 }
 
-input, textarea {
+input,
+textarea {
   padding: 10px;
   border: 2px solid #6495ED;
   border-radius: 10px;
@@ -356,13 +368,14 @@ form button {
 }
 
 form input:hover {
-    box-shadow: 10px -20px 90px  rgb(143, 132, 132);/* rgb(198, 184, 184)*/
-    scale: 1.05;
+  box-shadow: 10px -20px 90px rgb(143, 132, 132);
+  /* rgb(198, 184, 184)*/
+  scale: 1.05;
 }
 
-form textarea:hover{
-    scale: 1.05 ;
-    box-shadow: 10px -20px 90px rgb(84, 78, 78);
+form textarea:hover {
+  scale: 1.05;
+  box-shadow: 10px -20px 90px rgb(84, 78, 78);
 }
 
 form button:hover {
@@ -403,16 +416,19 @@ footer #copyright {
   font-family: Lato, sans-serif;
   margin-top: 1em;
 }
- #dividv{
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
- }
+
+#dividv {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
 @media (max-width: 768px) {
-    .header-content{
-        flex-direction: column;
-        height: fit-content;
-    }
+  .header-content {
+    flex-direction: column;
+    height: fit-content;
+  }
+
   .Home {
     flex-direction: column;
   }
@@ -425,6 +441,10 @@ footer #copyright {
   #DowmlordBtn {
     flex-direction: column;
     width: auto;
+  }
+
+  #imgContainer {
+    margin-right: 10%;
   }
 }
 
@@ -439,7 +459,7 @@ footer #copyright {
     border-radius: 10px;
     z-index: 1000;
     width: 40%;
-    opacity: 70%;
+    opacity: 80%;
   }
 
   .hamburger {
@@ -458,5 +478,10 @@ footer #copyright {
   #nav-menu {
     display: flex;
     gap: 20px;
+  }
+
+  #About-text {
+    margin-left: 10em;
+
   }
 }
