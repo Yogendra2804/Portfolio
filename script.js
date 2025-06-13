@@ -7,6 +7,10 @@ document.getElementById("contact-form").addEventListener("submit", async functio
   const message = document.getElementById("message");
   const formMessage = document.getElementById("form-message");
 
+  // Reset border styles
+  [name, email, message].forEach(input => input.style.borderColor = "");
+
+  // Validation
   if (!name.value.trim() || !email.value.trim() || !message.value.trim()) {
     alert("Please fill all fields.");
     if (!name.value.trim()) name.style.borderColor = "red";
@@ -25,6 +29,7 @@ document.getElementById("contact-form").addEventListener("submit", async functio
 
     if (response.ok) {
       formMessage.style.visibility = "visible";
+      formMessage.style.color = "limegreen";
       formMessage.innerText = "✅ Message sent successfully!";
       this.reset();
     } else {
