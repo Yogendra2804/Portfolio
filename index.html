@@ -164,27 +164,26 @@
                 </p>
             </div>
             <div id="form" data-aos="zoom-out-right">
-                <form id="contact-form" action="https://formsubmit.co/yogendra.gupta2023@vitstudent.ac.in"
-                    method="POST">
-                    <input type="hidden" name="_captcha" value="false">
+                <form id="contact-form">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="New Portfolio Message">
+        <input type="hidden" name="_template" value="table">
 
-                    <div id="name">
-                        <input type="text" name="name" id="full-name" placeholder="Your Name">
-                        <input type="email" name="email" id="email" placeholder="Your Email">
-                    </div>
+        <div id="name">
+            <input type="text" name="name" id="full-name" placeholder="Your Name" required>
+            <input type="email" name="email" id="email" placeholder="Your Email" required>
+        </div>
 
-                    <div id="comment">
-                        <textarea name="message" id="message" placeholder="Write your message here..."></textarea>
-                    </div>
-                    <input type="hidden" name="_next" value="https://yogendra2804.github.io/Portfolio/?success#Contact">
+        <div id="comment">
+            <textarea name="message" id="message" placeholder="Write your message here..." required></textarea>
+        </div>
 
-                    <button id="submity" type="submit">Send →</button>
+        <button id="submity" type="submit">Send →</button>
 
-                    <p id="form-message"
-                        style="visibility: hidden; color: limegreen; font-weight: bold; margin-top: 10px;">
-                        ✅ Message sent successfully!
-                    </p>
-                </form>
+        <p id="form-message" style="visibility: hidden; color: limegreen; font-weight: bold; margin-top: 10px;">
+            ✅ Message sent successfully!
+        </p>
+    </form>
 
             </div>
             <hr>
