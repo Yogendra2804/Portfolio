@@ -87,7 +87,7 @@ mood_switch.addEventListener("click", function () {
     }
 })
 
-document.getElementById("contact-form").addEventListener("submit", function (e) {
+document.getElementById("form").addEventListener("submit", function (e) {
     const name = document.getElementById("full-name");
     const email = document.getElementById("email");
     const message = document.getElementById("message");
