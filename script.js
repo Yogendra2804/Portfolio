@@ -7,10 +7,9 @@ document.getElementById("contact-form").addEventListener("submit", async functio
   const message = document.getElementById("message");
   const formMessage = document.getElementById("form-message");
 
-  // Reset border styles
+  // Reset input borders
   [name, email, message].forEach(input => input.style.borderColor = "");
 
-  // Validation
   if (!name.value.trim() || !email.value.trim() || !message.value.trim()) {
     alert("Please fill all fields.");
     if (!name.value.trim()) name.style.borderColor = "red";
