@@ -1,3 +1,44 @@
+//Page redirection here 
+document.getElementById("contact-form").addEventListener("submit", async function (e) {
+  e.preventDefault();
+
+  const name = document.getElementById("full-name");
+  const email = document.getElementById("email");
+  const message = document.getElementById("message");
+  const formMessage = document.getElementById("form-message");
+
+  if (!name.value.trim() || !email.value.trim() || !message.value.trim()) {
+    alert("Please fill all fields.");
+    if (!name.value.trim()) name.style.borderColor = "red";
+    if (!email.value.trim()) email.style.borderColor = "red";
+    if (!message.value.trim()) message.style.borderColor = "red";
+    return;
+  }
+
+  const formData = new FormData(this);
+
+  try {
+    const response = await fetch("https://formsubmit.co/ajax/yogendra.gupta2023@vitstudent.ac.in", {
+      method: "POST",
+      body: formData
+    });
+
+    if (response.ok) {
+      formMessage.style.visibility = "visible";
+      formMessage.innerText = "✅ Message sent successfully!";
+      this.reset();
+    } else {
+      formMessage.style.visibility = "visible";
+      formMessage.style.color = "red";
+      formMessage.innerText = "❌ Failed to send message. Try again.";
+    }
+  } catch (error) {
+    formMessage.style.visibility = "visible";
+    formMessage.style.color = "red";
+    formMessage.innerText = "❌ Network error. Try again.";
+  }
+});
+// End of page redirection.. 
 const hamburger = document.getElementById('hamburger');
 const navMenu = document.getElementById('nav-menu');
 
