@@ -433,6 +433,12 @@ footer #copyright {
     width: 350px;
     margin-right: 20px;
   }
+  #leftDiv{
+    margin-right: 10%;
+  }
+  #img_div{
+    margin-right: 50px;
+  }
   #me {
     width: 150px;
     height: 150px;
@@ -444,6 +450,7 @@ footer #copyright {
 
   .Home {
     flex-direction: column;
+    justify-content: center;
   }
 
   nav {
