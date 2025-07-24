@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Yogendra's Portfolio</title>
     <!-- Page Tab Logoo -->
-    <link rel="icon" type="image/png" href="imagees/favicon.png">
+    <link rel="icon" type="image/png" href="imagees/favicon-32x32.png">
 
     <!-- Bootstrap & Fonts -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -52,6 +52,9 @@
 
 
     <div class="Home">
+        <div id="img_div">
+            <img id="me" src="imagees/Me.jpg" alt="My image">
+        </div>
         <div id="leftDiv">
             <p id="Intro">
                 3rd Year B.Tech CSE Student at VIT Vellore <br> 
@@ -164,31 +167,26 @@
                 </p>
             </div>
             <div id="form" data-aos="zoom-out-right">
-               <div id="form" data-aos="zoom-out-right">
-  <form id="contact-form">
-    <!-- FormSubmit Hidden Inputs -->
-    <input type="hidden" name="_captcha" value="false" />
-    <input type="hidden" name="_template" value="table" />
-    <input type="hidden" name="_subject" value="New Portfolio Message from Yogendra's Website" />
+                <form id="contact-form" aaction="https://formsubmit.co/yogendra.gupta2023@vitstudent.ac.in"
+                    method="POST">
+                    <input type="hidden" name="_captcha" value="false">
 
-    <div id="name">
-      <input type="text" name="name" id="full-name" placeholder="Your Name" />
-      <input type="email" name="email" id="email" placeholder="Your Email" />
-    </div>
+                    <div id="name">
+                        <input type="text" name="name" id="full-name" placeholder="Your Name">
+                        <input type="email" name="email" id="email" placeholder="Your Email">
+                    </div>
 
-    <div id="comment">
-      <textarea name="message" id="message" placeholder="Write your message here..."></textarea>
-    </div>
+                    <div id="comment">
+                        <textarea name="message" id="message" placeholder="Write your message here..."></textarea>
+                    </div>
 
-    <button id="submity" type="submit">Send →</button>
+                    <button id="submity" type="submit">Send →</button>
 
-    <p id="form-message"
-       style="visibility: hidden; color: limegreen; font-weight: bold; margin-top: 10px;">
-       ✅ Message sent successfully!
-    </p>
-  </form>
-</div>
-
+                    <p id="form-message"
+                        style="visibility: hidden; color: limegreen; font-weight: bold; margin-top: 10px;">
+                        ✅ Message sent successfully!
+                    </p>
+                </form>
 
             </div>
             <hr>
@@ -200,7 +198,7 @@
             <div class="social-links">
                 <a href="https://github.com/Yogendra2804"><i class="fab fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/yogendra-gupta-123b0028a"><i class="fab fa-linkedin-in"></i></a>
-<!--                 <a href="https://www.instagram.com/yogendragupta845/"><i class="fab fa-instagram"></i></a> -->
+                <!-- <a href="https://www.instagram.com/yogendragupta845/"><i class="fab fa-instagram"></i></a> -->
             </div>
         </div>
         <div id="copyright">
