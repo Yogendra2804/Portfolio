@@ -117,10 +117,15 @@ nav {
   animation: sideSlider 1s ease-out forwards;
   max-width: 49vh;
   width: 90%;
+  margin-right: 100px;
 }
 
 #Intro {
+  width:fit-content;
   animation: fadeSlideIn 1s ease-out forwards;
+  font-family: 'Courier New', Courier, monospace;
+  box-shadow: 20px 10px 60px rgb(183, 39, 39);
+
 }
 
 #DowmlordBtn {
@@ -424,6 +429,14 @@ footer #copyright {
 }
 
 @media (max-width: 768px) {
+  #Intro{
+    width: 350px;
+    margin-right: 20px;
+  }
+  #me {
+    width: 150px;
+    height: 150px;
+  }
   .header-content {
     flex-direction: column;
     height: fit-content;
@@ -484,4 +497,22 @@ footer #copyright {
     margin-left: 10em;
 
   }
+}
+
+#img_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+#me {
+  border-radius: 50%;
+  border: 5px solid black;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  box-shadow: 0 0 50px #00ffff66;
+
 }
